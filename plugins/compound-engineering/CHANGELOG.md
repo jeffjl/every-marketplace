@@ -9,6 +9,55 @@ All notable changes to the compound-engineering plugin will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.5.0](https://github.com/jeffjl/every-marketplace/compare/compound-engineering-v3.4.1...compound-engineering-v3.5.0) (2026-05-01)
+
+
+### Features
+
+* **ce-brainstorm,ce-plan:** surface agent's scope synthesis before doc-write ([#705](https://github.com/jeffjl/every-marketplace/issues/705)) ([41e7f72](https://github.com/jeffjl/every-marketplace/commit/41e7f72ab697b3aee9b4a740794daa55317f44d1))
+* **ce-brainstorm:** probe rigor gaps with prose before Phase 2 ([#677](https://github.com/jeffjl/every-marketplace/issues/677)) ([304a975](https://github.com/jeffjl/every-marketplace/commit/304a975d02b362eac8e715e482f0118ee623da91))
+* **ce-compound:** add frontmatter parser-safety validator ([#697](https://github.com/jeffjl/every-marketplace/issues/697)) ([7eea2d1](https://github.com/jeffjl/every-marketplace/commit/7eea2d1cfe5c177e2d144b1e12f4957c75dac556))
+* **ce-simplify-code:** add skill for simplifying recent code changes ([#735](https://github.com/jeffjl/every-marketplace/issues/735)) ([2d20757](https://github.com/jeffjl/every-marketplace/commit/2d207574123782722116bd3d93f9f5756fab4dd3))
+* **ce-strategy,ce-product-pulse:** add PM skills for upstream anchor and outcome pulse ([#614](https://github.com/jeffjl/every-marketplace/issues/614)) ([cb8f9b3](https://github.com/jeffjl/every-marketplace/commit/cb8f9b348391d28f31ce367b9ff308980939c96f))
+* **ce-strategy:** move strategy doc to root and add frontmatter ([#732](https://github.com/jeffjl/every-marketplace/issues/732)) ([265cb42](https://github.com/jeffjl/every-marketplace/commit/265cb4280f22bbd2fd5cc45e338371442b6c1692))
+* **ce-test-browser:** free-port scan and auto-server start ([f8720da](https://github.com/jeffjl/every-marketplace/commit/f8720da3d1ba9e6d9fc161a6377f3ba83a8ab978))
+* **ce-test-browser:** gate port scan and auto-start on pipeline mode ([22d493b](https://github.com/jeffjl/every-marketplace/commit/22d493b192108970a3d54378f8de2fd72ac62863))
+* **lfg:** add ce-commit-push-pr step and remove ralph-loop ([1f20c38](https://github.com/jeffjl/every-marketplace/commit/1f20c3842d26a02ed8baca13eb737ca635320719))
+
+
+### Bug Fixes
+
+* **ce-code-review:** comment-gate previous-comments persona to skip empty PRs ([#720](https://github.com/jeffjl/every-marketplace/issues/720)) ([09fa18b](https://github.com/jeffjl/every-marketplace/commit/09fa18bcc1f130b7af26dfc53974776f1434b53d))
+* **ce-code-review:** mandate walkthrough.md load on walk-through entry ([#718](https://github.com/jeffjl/every-marketplace/issues/718)) ([5ac1a06](https://github.com/jeffjl/every-marketplace/commit/5ac1a063a9c154bb586a5f2b2ad17ef59990c0b6))
+* **ce-code-review:** move run artifacts from .context/ to /tmp per AGENTS.md ([#690](https://github.com/jeffjl/every-marketplace/issues/690)) ([85e9a20](https://github.com/jeffjl/every-marketplace/commit/85e9a2073b09295b1a0771d4775d42b7142fd172))
+* **ce-code-review:** replace LFG with best-judgment auto-resolve ([#685](https://github.com/jeffjl/every-marketplace/issues/685)) ([9ba41a1](https://github.com/jeffjl/every-marketplace/commit/9ba41a14cadfe2eee75fe50485f72f38b09df00b))
+* **ce-code-review:** restate model override at dispatch point ([#681](https://github.com/jeffjl/every-marketplace/issues/681)) ([9751d1a](https://github.com/jeffjl/every-marketplace/commit/9751d1a30a39fcfe17a9e052d32dbc9a5deafd02))
+* **ce-code-review:** tighten autofix_class rubric for safe_auto/gated_auto boundary ([#695](https://github.com/jeffjl/every-marketplace/issues/695)) ([ad9577e](https://github.com/jeffjl/every-marketplace/commit/ad9577e7329cba31cffba71815cac6cef290ae1b))
+* **ce-commit-push-pr:** URL-encode parens in badge model-slug examples ([#725](https://github.com/jeffjl/every-marketplace/issues/725)) ([3873b9e](https://github.com/jeffjl/every-marketplace/commit/3873b9e9de483cfe91eaed295a6b736d0a2e1168))
+* **ce-compound-refresh:** check inbound links before deletion ([#713](https://github.com/jeffjl/every-marketplace/issues/713)) ([e806522](https://github.com/jeffjl/every-marketplace/commit/e806522caab45f07f7bd3f06d6b1333068c538cd))
+* **ce-compound,ce-sessions:** handle non-git CWD in pre-resolved git branch ([#731](https://github.com/jeffjl/every-marketplace/issues/731)) ([5e04534](https://github.com/jeffjl/every-marketplace/commit/5e045341372fc95d284268d514a53da5722c81d2))
+* **ce-debug:** default to commit-and-PR and tighten learning offer ([#693](https://github.com/jeffjl/every-marketplace/issues/693)) ([e21156e](https://github.com/jeffjl/every-marketplace/commit/e21156eeb7e1502a37bf7d4a30fdc6a3287eed7a))
+* **ce-debug:** delegate commit/PR and add branch check ([#683](https://github.com/jeffjl/every-marketplace/issues/683)) ([1284290](https://github.com/jeffjl/every-marketplace/commit/1284290af27139c2df192488099626688fd4898b))
+* **ce-demo-reel:** wait for network idle and reject blank frames ([#692](https://github.com/jeffjl/every-marketplace/issues/692)) ([f30404e](https://github.com/jeffjl/every-marketplace/commit/f30404e57bcbf7866c1a9524f4392f7dff8f3a0b))
+* **ce-doc-review:** rename LFG path to best-judgment to avoid /lfg collision ([#691](https://github.com/jeffjl/every-marketplace/issues/691)) ([50bf65e](https://github.com/jeffjl/every-marketplace/commit/50bf65e88c556eaa1ae10c7d88d8e646274d7ae0))
+* **ce-doc-review:** tighten suggested_fix and why_it_matters rules ([#702](https://github.com/jeffjl/every-marketplace/issues/702)) ([dd08094](https://github.com/jeffjl/every-marketplace/commit/dd080943e0bff65416c5a3b16bcc6c3e1d26524f))
+* **ce-plan:** close synthesis drift in rich-context invocations ([#729](https://github.com/jeffjl/every-marketplace/issues/729)) ([15c1cde](https://github.com/jeffjl/every-marketplace/commit/15c1cde7b353d8f309b5a2de94bafb99380d787a))
+* **ce-plan:** inline post-generation menu routing so option 1 actually starts /ce-work ([#715](https://github.com/jeffjl/every-marketplace/issues/715)) ([0c515c0](https://github.com/jeffjl/every-marketplace/commit/0c515c06fe7efc77baf29b5512a768c930d50ba0))
+* **ce-resolve-pr-feedback:** add declined verdict for harmful suggestions ([#694](https://github.com/jeffjl/every-marketplace/issues/694)) ([bd72818](https://github.com/jeffjl/every-marketplace/commit/bd72818609054f6d173cf141641799fa729cc668))
+* **ce-sessions:** 722 ce-compound and ce-sessions permission error ([#723](https://github.com/jeffjl/every-marketplace/issues/723)) ([8f80466](https://github.com/jeffjl/every-marketplace/commit/8f804669b184bc68ef6dbab4669fe0e431d8271a))
+* **ce-setup:** detect codex global skills ([#739](https://github.com/jeffjl/every-marketplace/issues/739)) ([887db6b](https://github.com/jeffjl/every-marketplace/commit/887db6b2ade997a2723debc15b5baf34fcf52fb4))
+* **ce-test-browser:** skip headed/headless question in pipeline mode ([47350c3](https://github.com/jeffjl/every-marketplace/commit/47350c3e4e612fa341d8e43e4d1709ab391fbe42))
+* **ce-work-beta:** defer model and reasoning effort to Codex config ([#704](https://github.com/jeffjl/every-marketplace/issues/704)) ([4b5f28d](https://github.com/jeffjl/every-marketplace/commit/4b5f28da9746aae8f2c5dd715d7029d0ab2758a6))
+* **ce-work:** codify worktree isolation for parallel subagent dispatch ([#698](https://github.com/jeffjl/every-marketplace/issues/698)) ([053c1db](https://github.com/jeffjl/every-marketplace/commit/053c1db25511843b5967b3d04427b172ede98d25))
+* **code-review:** grant Write to JSON-pipeline reviewer agents ([#741](https://github.com/jeffjl/every-marketplace/issues/741)) ([520a9eb](https://github.com/jeffjl/every-marketplace/commit/520a9ebea039f4f5d984cd7f31d8b8e60a9e0bc6))
+* **commit-push-pr:** branch from fresh remote base to prevent stale-base contamination ([#708](https://github.com/jeffjl/every-marketplace/issues/708)) ([cd2fc67](https://github.com/jeffjl/every-marketplace/commit/cd2fc67c3f2db9b98de16a10d2a1e8e11700985e))
+* **main:** recover version drift, fix stale test, document learnings ([#678](https://github.com/jeffjl/every-marketplace/issues/678)) ([bc8ae1a](https://github.com/jeffjl/every-marketplace/commit/bc8ae1a6b5375f7fbb8120104b3222391da470bb))
+* **review:** default to harness-native code review, escalate on risk ([#721](https://github.com/jeffjl/every-marketplace/issues/721)) ([d217660](https://github.com/jeffjl/every-marketplace/commit/d217660b3d37acf38227abf5c57ba6f390ccaa1e))
+* **review:** queue reviewers when subagent slots fill ([#716](https://github.com/jeffjl/every-marketplace/issues/716)) ([d69a772](https://github.com/jeffjl/every-marketplace/commit/d69a772bb8682da23fa0b6a293245768e573254b))
+* **session-historian:** cap deep-dives, add keyword filter primitive, tighten dispatch ([#699](https://github.com/jeffjl/every-marketplace/issues/699)) ([a91270c](https://github.com/jeffjl/every-marketplace/commit/a91270ccd2d5fba3e035275b7af2c4fec3f90b1c))
+* **skills:** replace case statements blocked by permission check ([#701](https://github.com/jeffjl/every-marketplace/issues/701)) ([5952b20](https://github.com/jeffjl/every-marketplace/commit/5952b20d7f2a056f8d7d8719a2d20b6615aca9e4))
+* **skills:** replace shell antipatterns blocked by permission check ([#711](https://github.com/jeffjl/every-marketplace/issues/711)) ([1f0a77b](https://github.com/jeffjl/every-marketplace/commit/1f0a77bcc1e4edbf1b7979ea5cd13d1e553d4662))
+
 ## [3.4.1](https://github.com/EveryInc/compound-engineering-plugin/compare/compound-engineering-v3.4.0...compound-engineering-v3.4.1) (2026-05-01)
 
 
